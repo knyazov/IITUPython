@@ -20,8 +20,13 @@ employees = {
     "132": "Olson"
 }
 
-with open("employees.csv", "w") as file:
-    writer = csv.writer(file, delimiter=",")
-    writer.writerow(["employee_number", "employee_name"])
-    for key, value in employees.items():
-        writer.writerow([key, value])
+def san(a, b = 2):
+    print(a, b)
+a = 3
+san(a, 5)
+
+# with open("employees.csv", "w") as file:
+#     writer = csv.writer(file, delimiter=",")
+#     writer.writerow(["employee_number", "employee_name"])
+#     for key, value in employees.items():
+#         writer.writerow([key, value])
